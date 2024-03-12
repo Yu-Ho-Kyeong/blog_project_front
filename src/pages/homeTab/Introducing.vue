@@ -54,11 +54,11 @@ export default {
       },
 
       fnGetIntro(){
-        this.$axios.get('/api/all/getIntro/' + 24)
+        this.$axios.get('/api/all/getIntro/' + 1)
         .then((res) => {
 
           this.intro = res.data; 
-          this.userNo = 24;
+          this.userNo = 1;
 
           if(this.intro == null || this.intro == ''){
             this.movePage('introduce');

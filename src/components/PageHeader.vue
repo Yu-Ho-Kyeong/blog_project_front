@@ -103,7 +103,7 @@ export default {
     },
     // 회원정보 불러오기
     fnGetUserInfo(){
-      const apiUrl = '/api/all/getAdminSetInfo/' + 24
+      const apiUrl = '/api/all/getAdminSetInfo/' + 1
       this.$axios.get(apiUrl)
       .then((res)=>{
         this.input.name = res.data.name;
